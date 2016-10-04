@@ -1,0 +1,18 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form" xmlns:i="jelly:fmt">
+    <j:if test="$(it.isApplicable()}">
+        <l:pane title="${%Computer_Panel_Title}" width="2">
+            <tr>
+                <td class="pane" style="white-space: normal;">
+                    Access Info
+                </td>
+                <td class="pane" style="white-space: normal;">
+                    $(it.getAccessInfo()}
+                </td>
+            </tr>
+            <tr>
+                Login info here
+            </tr>
+        </l:pane>
+    </j:if>
+</j:jelly>
